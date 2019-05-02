@@ -1,0 +1,56 @@
+// Flex
+.df() {
+    display: -webkit-box; /* UC */
+    display: flex;
+    &.dn {
+        display: none
+    }
+}
+
+.ffc() {
+    -webkit-box-orient: vertical; /* UC */
+    flex-direction: column;
+}
+
+.fww() {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex() {
+    -webkit-box-flex: 1; /* UC */
+    flex: 1;
+}
+
+.flexi(@i: 1) {
+    -webkit-box-flex: @i; /* UC */
+    flex: @i;
+}
+
+.dfac() {
+    -webkit-box-align: center; /* UC */
+    align-items: center;
+}
+
+.dfjc(@i: center) {
+    -webkit-box-pack: @i; /* UC */
+    justify-content: @i;
+}
+
+.dfsb() {
+    -webkit-box-pack: justify; /* UC */
+    justify-content: space-between;
+}
+
+.fs(@i: 0) {
+    -webkit-box-flex: @i;
+    -moz-flex-shrink: @i;
+    -webkit-flex-shrink: @i;
+    flex-shrink: @i;
+}
+
+.basis(@i) {
+    -webkit-flex-basis: @i;
+    -moz-flex-basis: @i;
+    -ms-flex-basis: @i;
+}
